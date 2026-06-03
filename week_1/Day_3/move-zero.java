@@ -1,3 +1,4 @@
+package week_1.Day_3;
 class Solution {
     public void moveZeroes(int[] nums) {
         int j = 0;
