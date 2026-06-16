@@ -1,5 +1,5 @@
 package week_2.Day_3;
-class Solution {
+class Subsequence {
     public boolean isSubsequence(String s, String t) {
 
         int i = 0;
