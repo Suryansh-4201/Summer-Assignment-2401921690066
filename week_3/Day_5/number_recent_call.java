@@ -1,0 +1,24 @@
+package week_3.Day_5;
+
+import java.util.Queue;
+import java.util.LinkedList;
+
+class RecentCounter {
+
+    Queue<Integer> queue;
+
+    public RecentCounter() {
+        queue = new LinkedList<>();
+    }
+
+    public int ping(int t) {
+
+        queue.offer(t);
+
+        while (queue.peek() < t - 3000) {
+            queue.poll();
+        }
+
+        return queue.size();
+    }
+}
